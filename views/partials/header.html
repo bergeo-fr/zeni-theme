@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>{{template:title}}</title>
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {{ theme:css file="style.css" }}
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+    
+    
+    <!-- JS -->
+    {{ theme:js file="jquery-1.6.4.min.js" }}
+    {{ theme:js file="css3-mediaqueries.js" }}
+    {{ theme:js file="custom.js" }}
+    {{ theme:js file="tabs.js" }}
+
+    <!-- Tweet -->
+    {{ theme:css file="jquery.tweet.css" }}
+    {{ theme:js file="tweet/jquery.tweet.js"}}
+
+    <!-- ENDS Tweet -->
+    
+    <!-- superfish -->
+    {{ theme:css file="superfish.css" }}
+    {{ theme:js file="superfish-1.4.8/js/hoverIntent.js" }}
+    {{ theme:js file="superfish-1.4.8/js/superfish.js" }}
+    {{ theme:js file="superfish-1.4.8/js/supersubs.js" }}
+    <!-- ENDS superfish -->
+    
+    <!-- prettyPhoto -->
+    {{ theme:js file="prettyPhoto/js/jquery.prettyPhoto.js" }}
+    {{ theme:css file="../js/prettyPhoto/css/prettyPhoto.css" }}
+    <!-- ENDS prettyPhoto -->
+    
+    <!-- poshytip -->
+    {{ theme:css file="../js/poshytip-1.1/src/tip-twitter/tip-twitter.css" }}
+    {{ theme:css file="../js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css" }}
+    {{ theme:js file="poshytip-1.1/src/jquery.poshytip.min.js" }}
+    <!-- ENDS poshytip -->
+    
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
+    
+    <!-- Flex Slider -->
+    {{ theme:css file="flexslider.css" }}
+    {{ theme:js file="jquery.flexslider-min.js" }}
+    <!-- ENDS Flex Slider -->
+    
+    <!-- Less framework -->
+    {{ theme:css file="lessframework.css" }}
+
+    
+    <!-- modernizr -->
+    {{ theme:js file="modernizr.js" }}
+
+    
+    <!-- SKIN -->
+    {{ theme:css file="skin.css" }}
+
+    
+
+</head>
+
+<body lang="en">
+
+    
+
+    <header class="clearfix">
+    
+        <!-- top widget -->
+        <div id="top-widget-holder">
+            <div class="wrapper">
+                <div id="top-widget">
+                    <div class="padding">
+                    <ul  class="widget-cols clearfix">
+                            <li class="first-col">
+                                
+                                <div class="widget-block">
+                                    <h4>Recent posts</h4>
+                                    <div class="recent-post">
+                                        <a href="#" class="thumb">{{ theme:image file="dummies/54x54.gif" alt="Post" }}</a>
+                                        <div class="post-head">
+                                            <a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent-post">
+                                        <a href="#" class="thumb">{{ theme:image file="dummies/54x54.gif" alt="Post" }}</a>
+                                        <div class="post-head">
+                                            <a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent-post">
+                                        <a href="#" class="thumb">{{ theme:image file="dummies/54x54.gif" alt="Post" }}</a>
+                                        <div class="post-head">
+                                            <a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="second-col">
+                                
+                                <div class="widget-block">
+                                    <h4>Dummy text</h4>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                                </div>
+                                
+                            </li>
+                            
+                            <li class="third-col">
+                                
+                                <div class="widget-block">
+                                    <h4>Dummy text</h4>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                                </div>
+                                
+                            </li>
+                            
+                            <li class="fourth-col">
+                                
+                                <div class="widget-block">
+                                    <h4>Dummy text</h4>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies ege. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                                </div>
+                                
+                            </li>   
+                        </ul>               
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="top-open">Menu</a>
+        </div>
+        <!-- ENDS top-widget -->
+    
+        <div class="wrapper clearfix">
+            
+            <a href="index.html" id="logo">{{ theme:image file="logo.png" alt="Zeni"}}</a>
+            
+            <nav>
+                <ul id="nav" class="sf-menu">
+                    {{ navigation:links group="header" class="current-menu-item" }}
+                           <li class='{{ class }}'><a href="{{ url }}">{{ helper:strtoupper var=title }}</a></li>
+                    {{ /navigation:links }}
+                    <!-- Just in case you want submenues...
+                        <li><a href="page.html">ABOUT</a>
+                            <ul>
+                                <li><a href="#">Submenu</a></li>
+                                <li><a href="#">Submenu</a></li>
+                                <li><a href="#">Submenu</a></li>
+                            
+                            </ul>
+                        </li>
+                -->
+                </ul>
+                <div id="combo-holder"></div>
+            </nav>
+        </div>
+    </header>
+    

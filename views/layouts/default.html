@@ -1,0 +1,34 @@
+{{ theme:partial name="header" }}
+
+    {{ if { url:segments segment="1" } == '' }}
+        {{ theme:partial name="home" }}
+    {{ else }}
+        <div id="main"> 
+            <div class="wrapper clearfix">
+                
+                <!-- page content -->
+                <div id="page-content" class="clearfix">
+                    
+                    
+                    
+                    <!-- fullwidth content -->
+                    <div class="fullwidth-content">
+                    
+                        <h2 class="page-heading"><span>{{ template:title }}</span></h2>
+                        
+                        
+                        <p><a href="page.html">page with sidebar</a></p>
+
+                        {{ template:body }}
+
+                    </div>
+                <!-- ends fullwidth content -->
+                </div>              
+            <!--  page content-->
+            
+            </div>
+        </div>
+    {{ endif }}
+
+{{ theme:partial name="footer" }}
+
